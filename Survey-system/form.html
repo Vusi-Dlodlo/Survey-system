@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fill out Survey</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Survey-system/style.css">
+    <style>
+        .table td {
+            text-align: center;
+        }
+
+        .btn {
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="justify-content-center d-flex ">
+        <h1 class="font-weight-bold mt-3"> Take our Survey</h1>
+    </header>
+    <div>
+        <div class="container-fluid bg">
+            <div class="row justify-content-center ">
+                <div class="form-container col-lg-8 mt-4">
+                    <form action="submit.php" method="post">
+                        <div class="form-group row mt-1">
+
+                            <label for="inputName" class="col-sm-2 col-lg-3 col-form-label fw-bold">First Names</label>
+                            <div class="col-sm-6 col-lg-9">
+                                <input type="text" class="form-control" name="userName" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2">
+                            <label for="inputSur" class="col-sm-2 col-lg-3 col-form-label fw-bold">Surname</label>
+                            <div class="col-sm-6 col-lg-9">
+                                <input type="text" class="form-control" name="userSur" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2">
+                            <label for="inputNo" class="col-sm-2 col-lg-3 col-form-label fw-bold">Contact No.</label>
+                            <div class="col-sm-6 col-lg-9">
+                                <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" name="userNo" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2">
+                            <label for="inputDate" class="col-sm-2 col-lg-3 col-form-label fw-bold">Date</label>
+                            <div class="col-sm-6 col-lg-9">
+                                <input type="date" class="form-control" name="userDate" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2">
+                            <label for="inputAge" class="col-sm-2 col-lg-3 col-form-label fw-bold">Age</label>
+                            <div class="col-sm-6 col-lg-9">
+                                <input type="text" class="form-control" name="userAge" value="" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-lg-6 col-form-label fw-bold mt-2">What is your favourite food? (You can choose more than 1 answer) </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-lg-3 fw-bold">Pizza</div>
+                            <div class="col-sm-6 col-lg-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridCheck1[]" id="gridCheck1[]" value="Pizza">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row ">
+                            <div class="col-sm-2 col-lg-3 fw-bold">Pasta</div>
+                            <div class="col-sm-6 col-lg-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridCheck1[]" id="gridCheck1[]" value="Pasta">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-lg-3 fw-bold">Pap And Wors</div>
+                            <div class="col-sm-6 col-lg-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridCheck1[]" id="gridCheck1[]" value="Pap And Wors">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-lg-3 fw-bold">Chicken stir fry</div>
+                            <div class="col-sm-6 col-lg-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridCheck1[]" id="gridCheck1[]" value="Chicken stir fry">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-lg-3 fw-bold">Beef stir fry</div>
+                            <div class="col-sm-6 col-lg-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridCheck1[]" id="gridCheck1[]" value="Beef stir fry">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-lg-3 fw-bold">Other</div>
+                            <div class="col-sm-6 col-lg-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridCheck1[]" id="gridCheck1[]" value="Other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-lg-9 col-form-label fw-bold">On a scale of 1 to 5 indicate whether you strongly agree to strongly disagree </div>
+                        <table class="table table-striped table-dark">
+                            <thead class="text-center ">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col wrap-text" class="text-break">Strongly Agree <p>(1)</p>
+                                    </th>
+                                    <th scope="col">Agree <p>(2)</p>
+                                    </th>
+                                    <th scope="col">Neutral<p>(3)</p>
+                                    </th>
+                                    <th scope="col">Disagree <p>(4)</p>
+                                    </th>
+                                    <th scope="col">Strongly Disagree<p>(5)</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">I like to eat out</th>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioOut" value="1">
+                                        </div>
+                                    </td>
+                                    <td class="">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioOut" value="2">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="3">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" iname="radioOut" value="4">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioOut" value="5">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">I like to watch movies</th>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioMovies" value="1">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioMovies" value="2">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioMovies" value="3">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioMovies" value="4">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioMovies" value="5">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">I Like to watch TV</th>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioTV" value="1">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioTV" value="2">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioTV" value="3">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioTV" value="4">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioTV" value="5">
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row">I like to listen to the radio</th>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioRadio" value="1">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioRadio" value="2">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioRadio" value="3">
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioRadio" value="4">
+                                    </td>
+                                    <td class="">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="radioRadio" value="5">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row d-flex mt-2 mb-2 py-1 justify-content-center">
+                            <button type="submit" class="btn btn-success btn-sm" name="Submit" id="submit">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+          <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                        $("#submit").on('click', function() {
+                            if (jQuery("#gridCheck1[]").is(":checked")) {
+                               
+                            } else {
+                                alert("Please check one chckbox in the food options");
+                            }
+                        });
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+        <script>
+        </script>
+</body>
+
+</html>

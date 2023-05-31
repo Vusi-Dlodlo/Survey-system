@@ -1,0 +1,14 @@
+.input-group-append {
+    cursor: pointer;
+}
+
+table, td{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+  }
+  .radio{
+    text-align: center;
+ /*Centering the text in a td of the table*/
+  }}
