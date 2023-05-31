@@ -1,0 +1,31 @@
+
+ To use the system you need an offline wampserver 
+ Can download it and use the normal settings when installing it. 
+ after installation one should copy or move the folder Survey-sytem into the wampserver " www" folder
+ The folder is usually located in the " windows/wampsever64/www" folder 
+After moving the folder you should import the survey_db.sql file in mysql, 
+to do that you first need to run wampserver once all serves are running on or has a green icon.
+left click go to phpmyadmin enter the this username "root" press enter.
+ once inside phpmyadmin you should go to import sql and go to the survey_db.sql file it will automatically create the database including the relavent table.
+the survey_db.sql file is located in folder named " sql_query"
+after you successfully imported ypu should be able to fill form and view results.
+The web application is built using mysql as a database, sql query language, bootstrap and php.
+if the creation of the database should fail copy and paste the following code into 
+the sql tab - 
+
+create database survey_db
+use survey_db; 
+
+create table surveydata (
+    ID INT(6) primary key NOT NULL AUTO_INCREMENT, 
+    Surname  varchar(255) not null, 
+    Names varchar(255) not null, 
+    contactNo varchar(255) not null , 
+    currentDate date not null, 
+    favouriteFoods varchar(1000) not null, 
+    eatingOut int(10) not null, 
+    watchingMovies int(10) not null, 
+    watchTv int(10) not null,
+    radioListener int(10) not null
+ );
+That is all thank you for reading this mini readme file 
