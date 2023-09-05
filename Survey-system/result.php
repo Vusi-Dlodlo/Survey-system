@@ -1,18 +1,18 @@
-<?php 
+<?php
 session_start();
 include('connect.php');
 include('results.php');
-$total =  $_SESSION['total'];
-$avgAge =  $_SESSION['AvgAge'];
-$maxAge =  $_SESSION['OldestPerson'];
-$lowestAge =  $_SESSION['YongestPerson'];
-$pizza =  $_SESSION['PizzaP'];
-$pasta =  $_SESSION['PastaP'];
-$wors_pap =  $_SESSION['PAP&WorsP'];
-$eatOut =  $_SESSION['EatingOutAvg'];
-$movies =  $_SESSION['AVGMOVIES'];
-$tv =  $_SESSION['AVGTV'];
-$radio =  $_SESSION['Radio'];
+$total = $_SESSION['total'];
+$avgAge = $_SESSION['AvgAge'];
+$maxAge = $_SESSION['OldestPerson'];
+$lowestAge = $_SESSION['YongestPerson'];
+$pizza = $_SESSION['PizzaP'];
+$pasta = $_SESSION['PastaP'];
+$wors_pap = $_SESSION['PAP&WorsP'];
+$eatOut = $_SESSION['EatingOutAvg'];
+$movies = $_SESSION['AVGMOVIES'];
+$tv = $_SESSION['AVGTV'];
+$radio = $_SESSION['Radio'];
 
 ?>
 <!doctype html>
@@ -25,7 +25,8 @@ $radio =  $_SESSION['Radio'];
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Internal Styles -->
     <style>
@@ -77,7 +78,6 @@ $radio =  $_SESSION['Radio'];
             background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
             color: #fff;
         }
-
     </style>
 
 </head>
@@ -108,7 +108,8 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -123,12 +124,13 @@ $radio =  $_SESSION['Radio'];
                             <div class="row align-items-center mb-2 d-flex">
                                 <div class="col-8">
                                     <h2 class="d-flex align-items-center mb-0">
-                                        <?php echo $avgAge .' '?>
+                                        <?php echo $avgAge . ' ' ?>
                                     </h2>
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-green" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-green" role="progressbar" data-width="25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -148,7 +150,9 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%" aria-valuenow="<?php echo $maxAge ?>" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%"
+                                    aria-valuenow="<?php echo $maxAge ?>" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -168,7 +172,9 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width='' aria-valuenow=".<?php echo $lowestAge ?>" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width=''
+                                    aria-valuenow=".<?php echo $lowestAge ?>" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -195,7 +201,8 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -210,12 +217,13 @@ $radio =  $_SESSION['Radio'];
                             <div class="row align-items-center mb-2 d-flex">
                                 <div class="col-8">
                                     <h2 class="d-flex align-items-center mb-0">
-                                        <?php echo $pasta .' '?>
+                                        <?php echo $pasta . ' ' ?>
                                     </h2>
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-green" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-green" role="progressbar" data-width="25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -235,7 +243,9 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%" aria-valuenow="<?php echo $maxAge ?>" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%"
+                                    aria-valuenow="<?php echo $maxAge ?>" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -262,7 +272,8 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -277,12 +288,13 @@ $radio =  $_SESSION['Radio'];
                             <div class="row align-items-center mb-2 d-flex">
                                 <div class="col-8">
                                     <h2 class="d-flex align-items-center mb-0">
-                                        <?php echo $movies .' '?>
+                                        <?php echo $movies . ' ' ?>
                                     </h2>
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-green" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-green" role="progressbar" data-width="25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -302,7 +314,9 @@ $radio =  $_SESSION['Radio'];
                                 </div>
                             </div>
                             <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%" aria-valuenow="<?php echo $maxAge ?>" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%"
+                                    aria-valuenow="<?php echo $maxAge ?>" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -321,7 +335,9 @@ $radio =  $_SESSION['Radio'];
                                         </div>
                                     </div>
                                     <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width='' aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width=''
+                                            aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                                        </div>
                                     </div>
                             </div>
                         </div>
@@ -341,11 +357,13 @@ $radio =  $_SESSION['Radio'];
         <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
